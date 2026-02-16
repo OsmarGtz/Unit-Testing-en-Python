@@ -18,7 +18,8 @@ class CalculatorTests(unittest.TestCase):
        assert result == expected
     
     def test_divide_by_zero(self):
-        with self.assertRaises(ZeroDivisionError):
-            divide(10, 0)
+        with self.assertRaises(ValueError):
+            divide(1,0)
+
 
 
